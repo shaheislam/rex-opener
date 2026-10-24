@@ -7,6 +7,14 @@ error, or browse a directory without copying its path.
 The plugin registers **Open URL or file** (`rex_opener_open`). You choose the
 shortcut; it does not install any keybindings.
 
+## Demo
+
+![Rex opener filtering terminal targets to main.py and opening Neovim at line 17](assets/demo.gif)
+
+Recorded in Rex with sample build output: open the picker, search for `main.py`,
+and jump to the reported line in Neovim. Cropped close-ups keep the targets and
+source readable; the demo uses the real opener with automated input.
+
 ## What it opens
 
 | Target | Result |
