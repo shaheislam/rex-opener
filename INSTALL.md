@@ -1,7 +1,9 @@
-# Rex opener
+# Installing Rex opener
 
 Open URLs and local files found in a Rex terminal's output. No dotfiles checkout,
 tmux, Python packages or plugin manager is required.
+
+For a quick start, supported targets and troubleshooting, see [README.md](README.md).
 
 ## Requirements
 
@@ -49,6 +51,10 @@ Validate, then reload from Fish:
 rex config check
 rex --autostart=false config reload
 ```
+
+Reloading is required: an already-running server keeps its previous actions and
+bindings until it reads the configuration again. After an update, reload even
+when the `init.lua` entry itself has not changed.
 
 ## Behaviour
 
